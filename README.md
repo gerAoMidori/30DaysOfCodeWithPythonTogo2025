@@ -26,5 +26,5 @@ Each folder in this repository represents one day of the challenge, with Python 
 
 ## 📣 Share the Journey
 
-You’re encouraged to share your progress on social media (LinkedIn, Twitter, Facebook) using the official hashtags:
-
+You can see and share what others are making through platforms like LinkedIn, Twitter, Facebook using the official hashtags:
+**#PyConTogo2025 #PythonTogo #Challenge30DaysOfPython #30DaysOfCodeWithPythonTogo**

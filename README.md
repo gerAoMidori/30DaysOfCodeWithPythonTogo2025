@@ -1,5 +1,5 @@
 # 🚀 30 Days of Python Challenge – Python Togo 🇹🇬
-**#30DaysOfCodeWithPythonTogo2025**
+
 Welcome to my journey through the **#30DaysOfCodeWithPythonTogo** challenge organized by [Python Togo](https://pytogo.org)!  
 This repository contains all my daily solutions and notes as I progress through the challenge.
 

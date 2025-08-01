@@ -51,7 +51,7 @@ print("Top 10 languages spoken in the world:", top_10_languages)
 
 #Displaying the 10 most populated countries 
 
-sorted_data_by_population = sorted(data, key=lambda x: x.get("population", ""), reverse=True)
+sorted_data_by_population = sorted(data, key=lambda x: x.get("population"), reverse=True)
 top_10_by_population = [i['name']for i in sorted_data_by_population[:10]]
 print("Top 10 most populous countries:", top_10_by_population)
 

@@ -3,9 +3,15 @@
 #1
 from countries import countries
 
+countries_with_land = []
 for i in countries:
     if "land" in i:
-        print(i)
+        countries_with_land.append(i)
+
+#This exercice is about for loop so I decided to not use list comprehension
+print("Countries with 'land' in their name:", countries_with_land)
+
+
 #2 
 fruits = ["banane", "orange", "mangue", "citron"]
 
@@ -16,15 +22,20 @@ for i in range(len(fruits)//2):
 
 print(fruits)
 
+
 #3
+''' Use this section to fetch the data using the json file
 import json
 
 # Loading the JSON data
 with open('countries_data.json', 'r', encoding="utf-8") as file:
     data = json.load(file)
     data = list(data)
+'''
+from countries_data import data
 
 languages = {}
+
 for i in data:
     if "languages" in i:
         for j in i["languages"]:

@@ -40,17 +40,18 @@ for i in data:
     if "languages" in i:
         for j in i["languages"]:
             languages[j] = languages.get(j, 0) + 1
-#print(languages)
+
+
 print("Total number of languages:", len(languages))
 
-#Sort (Discovered how to sort dictionariesbased on values)
+#Sort (Discovered how to sort dictionaries based on values or keys)
 sorted_languages = sorted(languages.items(), key=lambda x: x[1], reverse=True)
 top_10_languages =  [i[0] for i in sorted_languages[:10]]
 print("Top 10 languages spoken in the world:", top_10_languages) 
 
-#Displaying the 10 most populous countries 
+#Displaying the 10 most populated countries 
 
-sorted_data_by_population = sorted(data, key=lambda x: x.get("population", 0), reverse=True)
+sorted_data_by_population = sorted(data, key=lambda x: x.get("population", ""), reverse=True)
 top_10_by_population = [i['name']for i in sorted_data_by_population[:10]]
 print("Top 10 most populous countries:", top_10_by_population)
 

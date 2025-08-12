@@ -37,7 +37,7 @@ def calculate_median(my_list):
     if len(my_list) % 2 != 0:
         return my_list[len(my_list)//2]
     else:
-        return (my_list[len(my_list)/2] + my_list[(len(my_list)/2) - 1]) /2
+        return (my_list[len(my_list)//2] + my_list[(len(my_list)//2) - 1]) / 2
 
 def calculate_mode(my_list):
     """I'll use a dictionnary because the is taking too much time"""

@@ -24,7 +24,9 @@ for i in section:
     dictionary[i.find("h4").get_text()] = []
     for j in i.find("ul").find_all("li"):
         line =list([k.get_text() for k in j.find_all("span", recursive=False)])
-        dictionary[str(i.find("h4").get_text())].append(line)
+        line_= {str(line[0]) : line[1]}
+
+        dictionary[str(i.find("h4").get_text())].append(line_)
 
 
 #print(len(section))
@@ -50,4 +52,6 @@ for i in div:
 
 
 json_str = json.dumps(dictionary)
-print(json_str)
+#print(json_str)
+with open("info.json", "w") as f:
+    json.dump(dictionary, f, indent=4)
